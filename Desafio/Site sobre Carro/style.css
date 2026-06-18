@@ -1,0 +1,179 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'regular';
+    src: url('../font/losevka_Charon/regular.ttf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0: #D7E4FF;
+    --cor1: #B2D4FF;
+    --cor2: #6298CC;
+    --cor3: #2C6899;
+    --cor4: #084166;
+    --cor5: #041833;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, san-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-diferente: 'regular', cursive;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    color: rgba(255, 255, 255, 0.885);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.318); 
+}
+
+
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 700px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin:auto;
+    text-shadow: 2px 2px 0px black;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.395);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.451);
+     border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-diferente);
+    font-weight: normal;
+    font-size: 1.8em;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+main h2{
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    text-indent: 8px;
+}
+
+main  p{
+    margin: 15px 0px;
+    font-family: var(--fonte-padrao);
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+}
+
+main ul{
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+
+main li{
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    text-indent: 30px;
+    color: var(--cor4);
+}
+
+main img{
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.267);
+}
+
+aside > h3.principal{
+    font-family: var(--fonte-diferente);
+    text-align: center;
+    background-color: var(--cor4);
+    color: white;
+    padding: 15px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul.primaria {
+    columns: 2;
+    list-style: inside;
+}
+
+aside ul{
+    list-style: inside;
+    margin: 15px;
+}
+
+aside > h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding: 10px;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+
