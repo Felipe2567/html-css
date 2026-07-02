@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo{
+             background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 350px;
+            background-color: yellow;
+            
+            left: 25%;
+            top: 25%;
+
+            transform: translate(-175px, -20px);
+        }
+
+        #conteudo02{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            background-color: green;
+            height: 200px;
+            width: 350px;
+            
+            left: 50%;
+            top: 50%;
+        }
+
+        #conteudo03{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            background-color: red;
+            height: 200px;
+            width: 350px;
+
+            left: 25%;
+            top: 50%;
+
+            transform: translate(-170px, 0px);
+        }
+
+        #conteudo04{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            background-color: blue;
+            height: 200px;
+            width: 350px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(0px, -200px);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+        <article id="conteudo02">
+
+        </article>
+        <article id="conteudo03">
+
+        </article>
+        <article id="conteudo04">
+
+        </article>
+    </section>
+</body>
+</html>
